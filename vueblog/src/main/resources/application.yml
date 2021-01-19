@@ -1,0 +1,26 @@
+spring:
+  datasource:
+    password: 156437734
+    url: jdbc:mysql://47.98.210.55:3306/atguigu?serverTimezone=GMT%2B8
+    username: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+shiro-redis:
+  enabled: true
+  redis-manager:
+    host: 47.98.210.55:5003
+
+
+
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/**Mapper.xml
+server:
+  port: 8081
+
+markerhub:
+  jwt:
+    # ������Կ
+    secret: f4e2e52034348f86b67cde581c0f9eb5
+    # token��Чʱ����7�죬��λ��
+    expire: 604800
+    header: Authorization
